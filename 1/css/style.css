@@ -72,11 +72,10 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed; /* Casus Arka Plan */
     background-size: 1280px 720px;
-    filter: grayscale(100%;)
     font-size: 20px;
     display: grid;
     padding: 5px 20px;
-    color: darkseagreen;
+    max-width: 100%;
 }
 
 footer{
@@ -156,6 +155,11 @@ footer #copyright{
     width: 50%;
 }
 
+.content{
+    display: grid;
+    max-width: 100%;
+}
+
 quote{
     display: block;
     border: 1px solid;
@@ -232,4 +236,17 @@ quote{
     #column-left { 
         display: none;
     }
+    
+    .row{
+        display: block;
+    }
+    
+    .info-text{
+        width: 80%;
+    }
+    /*
+    .about{
+        width: 116%;
+    }
+    */
 }
