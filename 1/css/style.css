@@ -1,7 +1,7 @@
 body{
     font-family: sans-serif;
     margin: 0;
-    background-color: #FFACA6;
+    background-color: black;
 }
 
 .navbar{
@@ -29,7 +29,6 @@ body{
     display: inline-block;
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
     vertical-align: middle;
 }
@@ -54,8 +53,8 @@ body{
     border-right: none;
 }
 
-.navbar ul li a:hover{
-    color: orange;
+.navbar ul li a:hover, .navbar .active{
+    color: orange !important;
 }
 
 #logo{
@@ -64,9 +63,6 @@ body{
     margin-right: 2rem;
     padding: 0 2rem;
     background-color: #343A40;
-    -webkit-box-shadow: 7px 0px 13px 0px rgba(0,0,0,0.46);
-    -moz-box-shadow: 7px 0px 13px 0px rgba(0,0,0,0.46);
-    box-shadow: 7px 0px 13px 0px rgba(0,0,0,0.46);
 }
 
 .container{
@@ -76,6 +72,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed; /* Casus Arka Plan */
     background-size: 1280px 720px;
+    filter: grayscale(100%;)
     font-size: 20px;
     display: grid;
     padding: 5px 20px;
@@ -132,8 +129,107 @@ footer #copyright{
     border: 2px solid black;
 }
 
-.title {
+.img{
+    opacity: 0.8;
+    text-align: center;
+    z-index: -1;
+}
+
+.img img{
+    max-width: 200px;
+    width: 35%;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 12rem;
+    display: inline;
+    animation-name: showImg;
+    animation-duration: 5s;
+}
+
+.title h2{
     color: white;
     text-align: center;
     text-transform: uppercase;
+}
+
+.info-text{
+    width: 50%;
+}
+
+quote{
+    display: block;
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    margin: 1rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+.quote-author{
+    text-align: right;
+    display: block;
+    font-style: normal;
+}
+
+.row{
+    display: flex;
+    margin: 0 auto;
+}
+
+@keyframes showImg {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+}
+
+@media all and (max-width: 540px) {
+    .navbar{
+        position: static;
+    }
+    
+    #logo{
+        text-align: center;
+        font-size: 58px;
+        padding: 0;
+        float: none;
+        width: 100%;
+    }
+    
+    .navbar div{
+        font-size: -webkit-xxx-large;
+    }
+    
+    .navbar ul a{
+        display: block;
+        text-align: left;
+        font-size: 40%;
+        width: 100%;
+    }
+    
+    .navbar ul li{
+        float: none;
+        border: none;
+    }
+    
+    h1{
+        font-size: 50%;
+    }
+    
+    #original{
+        width: 50%;
+        float: none !important;
+        margin: 10px !important;
+    }
+    
+    #fake{
+        display: none;
+    }
+    
+    #column-left { 
+        display: none;
+    }
 }

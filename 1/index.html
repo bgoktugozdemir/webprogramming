@@ -4,16 +4,17 @@
     <title>bgoktugozdemir | Weble Tanışalım</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <nav class="navbar">
         <div class="navbar-inner">
-            <div id="logo"><h1><span id="firstname">B</span><span id="secondname">GOKTUG</span><span id="lastname">OZDEMİR</span></h1></div>
+            <div id="logo"><h1><span id="firstname">B</span><span id="secondname">GÖKTUĞ</span><span id="lastname">ÖZDEMİR</span></h1></div>
             <div id="buttons">
                 <ul class="nav-button">
-                    <li><a href="index.html">Ben</a></li>
-                    <li><a href="#">Hakkımda</a></li>
+                    <li><a href="index.html" class="active">Ben</a></li>
+                    <li><a href="about.html">Hakkımda</a></li>
                     <li><a href="#">İletişim</a></li>
                 </ul>
             </div>
@@ -23,6 +24,10 @@
     <div class="container">
         <div class="title">
             <h2>Merhaba, Ben Göktuğ 👋</h2>
+            <div class="img">
+                <img src="img/me.jpeg" style="float: left; margin-left: 10%" id="original">             
+                <img src="img/me.jpeg" style="float: right; margin-right: 10%; transform: scaleX(-1);" id="fake">
+            </div>
         </div>
         <div class="text">
             Burayı senin için hazırladım. Aşağılara doğru indikçe göreceksin ki aslında basit bir web sitesi ile bile ne kadar çok şey yapabiliyorsun.
