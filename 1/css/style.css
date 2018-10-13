@@ -1,5 +1,5 @@
 body{
-    font-family: cursive;
+    font-family: sans-serif;
     margin: 0;
     background-color: #FFACA6;
 }
@@ -136,10 +136,4 @@ footer #copyright{
     color: white;
     text-align: center;
     text-transform: uppercase;
-}
-
-@media only screen and (max-width: 600px) {
-    body {
-        font-family: sans-serif;
-    }
 }
