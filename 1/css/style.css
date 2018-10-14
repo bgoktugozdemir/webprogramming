@@ -157,7 +157,7 @@ footer #copyright{
 }
 
 .content{
-    display: grid;
+    display: inline-block;
     max-width: 100%;
 }
 
@@ -188,6 +188,22 @@ form{
 
 #last-name{
     float: right;
+}
+
+.special-div{
+    background-image: url(../img/special.jpg) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.special-div .inside{
+    background-color: RGBA(255,0,0,0.3);
+    color: white;
+    display: grid;
+    border-radius: 1rem;
 }
 
 
