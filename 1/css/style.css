@@ -85,6 +85,7 @@ footer{
     text-align: center; 
     padding: 10px 0;
     overflow: hidden;
+    bottom: 0px;
 }
 
 footer #copyright{
@@ -180,6 +181,16 @@ quote{
     margin: 0 auto;
 }
 
+form{
+    background-color: RGBA(0,0,0,0.5) !important;
+    color: white;
+}
+
+#last-name{
+    float: right;
+}
+
+
 @keyframes showImg {
     from {
         opacity: 0;
@@ -190,7 +201,7 @@ quote{
     }
 }
 
-@media all and (max-width: 540px) {
+@media all and (max-width: 1019px) {
     .navbar{
         position: static;
     }
@@ -244,9 +255,8 @@ quote{
     .info-text{
         width: 80%;
     }
-    /*
-    .about{
-        width: 116%;
+    
+    #last-name{
+        float: none;
     }
-    */
 }
